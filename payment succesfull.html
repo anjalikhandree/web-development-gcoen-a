@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .confirmation-container {
+            background-color: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .confirmation-container h2 {
+            color: #28a745;
+        }
+
+        .confirmation-container .message {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .confirmation-container .summary {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .summary p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .summary .total {
+            font-weight: bold;
+            font-size: 20px;
+            color: #28a745;
+        }
+
+        .confirmation-container button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .confirmation-container button:hover {
+            background-color: #218838;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Confirmation Container -->
+    <div class="confirmation-container">
+        <h2>Payment Successful!</h2>
+        <p class="message">Thank you for your purchase! Your order has been processed successfully.</p>
+
+        <!-- Thank you message and redirect button -->
+        <p class="message">You will receive an email confirmation shortly. If you have any questions, feel free to <a href="contact.html">contact us</a>.</p>
+        <button onclick="goHome()">Back to Home</button>
+    </div>
+
+    <script>
+        // Popup message for payment success
+        window.onload = function() {
+            alert("Payment Successful! Thank you for your purchase.");
+        };
+
+        // JavaScript to handle redirection after payment success
+        function goHome() {
+            window.location.href = "index.html"; // Redirect to the homepage
+        }
+    </script>
+
+</body>
+</html>
